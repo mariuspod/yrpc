@@ -1,0 +1,19 @@
+{
+  "name": "yrpc",
+  "version": "0.0.1",
+  "description": "gRPC js lib for the yearn-exporter",
+  "main": "yrpc.js",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.5.4",
+    "dotenv": "^16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariuspod/yrpc.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC"
+}
