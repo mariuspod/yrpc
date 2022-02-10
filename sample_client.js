@@ -1,5 +1,9 @@
+require('dotenv').config();
+const host = process.env.HOST || 'localhost';
+const port = process.env.PORT || 1337
 
-const { client } = require("./yrpc");
+const { YearnExporter, grpc } = require("./yrpc");
+const client = new YearnExporter(`${host}:${port}`, grpc.credentials.createInsecure())
 /**
  * this is a sample client requesting the prices for several contracts over gRPC. 
  */
