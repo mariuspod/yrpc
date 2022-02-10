@@ -3,7 +3,7 @@ require('dotenv').config();
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 1337
 
-const PROTO_PATH = 'yrpc.proto';
+const PROTO_PATH = __dirname + '/yrpc.proto';
 const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
 const packageDefinition = protoLoader.loadSync(
